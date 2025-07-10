@@ -11,14 +11,58 @@ class Myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blue,
         appBar: AppBar(
-          backgroundColor: Colors.blueGrey,
-          title: const Text('My First App'),
+          backgroundColor: Colors.redAccent,
+          title: const Text('My first project'),
         ),
-        body: const Center(
-          child: Image(
-            image: AssetImage('assests/images.jpg'),
+        body: SafeArea(
+          child: Column(
+            children: [
+              const Text("First widget"),
+              SizedBox(
+                height: 10,
+              ),
+              const Text("Second widget"),
+              SizedBox(
+                height: 10,
+              ),
+              const Text("Third widget"),
+              SizedBox(
+                height: 10,
+              ),
+              const Text("Fourth widget"),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.pink,
+                child: const Center(child: Text("Container 1")),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.pink,
+                child: const Center(child: Text("Container 1")),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.pink,
+                child: const Center(child: Text("Container 2")),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+            ],
           ),
         ),
       ),
