@@ -61,7 +61,7 @@ class Myapp extends StatelessWidget {
               ),
               Center(
                 child: Text(
-                  "Login",
+                  "Sign Up",
                   style: TextStyle(
                     fontSize: 24,
                     fontFamily: 'Rubik Medium',
@@ -83,6 +83,48 @@ class Myapp extends StatelessWidget {
               ),
 
               SizedBox(height: 20,),
+              Padding(
+                padding: EdgeInsets.all(20),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    hintText: "Name",
+                    fillColor:Color(0xffF8F9FA) ,
+                    filled: true,
+                    prefixIcon: Icon(Icons.person ,color: Color(0xff323F4B),),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: const BorderSide(color: Color(0xffE4E7EB),),
+
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: const BorderSide(color: Color(0xffE4E7EB),),
+
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.all(20),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    hintText: "Contact",
+                    fillColor:Color(0xffF8F9FA) ,
+                    filled: true,
+                    prefixIcon: Icon(Icons.phone ,color: Color(0xff323F4B),),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: const BorderSide(color: Color(0xffE4E7EB),),
+
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: const BorderSide(color: Color(0xffE4E7EB),),
+
+                    ),
+                  ),
+                ),
+              ),
 
               Padding(
                 padding: EdgeInsets.all(20),
@@ -125,7 +167,7 @@ class Myapp extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 100,),
+              SizedBox(height: 80,),
 
               Container(
                 height: 50,
@@ -137,7 +179,7 @@ class Myapp extends StatelessWidget {
                 ),
                 child: Center(
                   child: Text(
-                    "Log In",
+                    "Sign up",
                     style: TextStyle(
                       fontSize: 18 ,
                       fontFamily: 'Rubik Regular',
@@ -151,7 +193,7 @@ class Myapp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Dont have an account?",
+                    "Already have an account?",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 16,
@@ -160,7 +202,7 @@ class Myapp extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    "Signup",
+                    "Login",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 16,
