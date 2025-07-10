@@ -17,23 +17,12 @@ class Myapp extends StatelessWidget {
           title: const Text('My first project'),
         ),
         body: SafeArea(
-          child: Column(
+          child: Row(
             children: [
               const Text("First widget"),
+
               SizedBox(
-                height: 10,
-              ),
-              const Text("Second widget"),
-              SizedBox(
-                height: 10,
-              ),
-              const Text("Third widget"),
-              SizedBox(
-                height: 10,
-              ),
-              const Text("Fourth widget"),
-              SizedBox(
-                height: 10,
+                width: 5,
               ),
               Container(
                 height: 100,
@@ -42,7 +31,7 @@ class Myapp extends StatelessWidget {
                 child: const Center(child: Text("Container 1")),
               ),
               SizedBox(
-                height: 10,
+                width: 5,
               ),
               Container(
                 height: 100,
@@ -51,7 +40,7 @@ class Myapp extends StatelessWidget {
                 child: const Center(child: Text("Container 1")),
               ),
               SizedBox(
-                height: 10,
+                width: 5,
               ),
               Container(
                 height: 100,
@@ -60,7 +49,7 @@ class Myapp extends StatelessWidget {
                 child: const Center(child: Text("Container 2")),
               ),
               SizedBox(
-                height: 10,
+                width: 5,
               ),
             ],
           ),
