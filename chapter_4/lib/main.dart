@@ -18,59 +18,46 @@ class MyApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Row(
-              children: [
-                Expanded(
-                  flex: 2,
-                  child: Container(
-                    height: 250,
-                    color: Colors.red,
-                    child: Center(child: Text("Container 1")),
-                  ),
-                ),
-                Expanded(
-                  flex :3,
-                  child: Container(
-                    height: 250,
-                    color: Colors.green,
-                    child: Center(child: Text("Container 1")),
-                  ),
-                ),
-              ],
-            ),
-            Container(
-              width: 250,
-              height: 250,
-              transform: Matrix4.rotationZ(.2),
-              decoration: BoxDecoration(
-                color: Colors.orange,
-
-                borderRadius: BorderRadius.circular(10.0),
-                
-
-                boxShadow: [BoxShadow(
-                  color: Colors.grey,
-                  blurRadius: 50
-                ),],
-
-                // border: Border.all(
-                //   color: Colors.red,
-                //   width: 1,
-                // ),
-
-
-
-                image: DecorationImage(
-                  fit: BoxFit.fitHeight,
-                    image: NetworkImage(
-                        'https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg'))
-
-
+            Expanded(
+              flex: 1,
+              child: Container(
+                color: Colors.red,
+                child: Center(child: Text("Container 1")),
               ),
-              child: Center(child: Text("Login " ,style: TextStyle(
-                fontSize: 35,
-                fontWeight:FontWeight.bold
-              ),)),
+            ),
+            Expanded(
+              flex: 3,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.orange,
+
+                  borderRadius: BorderRadius.circular(10.0),
+
+
+                  boxShadow: [BoxShadow(
+                    color: Colors.grey,
+                    blurRadius: 50
+                  ),],
+
+                  // border: Border.all(
+                  //   color: Colors.red,
+                  //   width: 1,
+                  // ),
+
+
+
+                  image: DecorationImage(
+                    fit: BoxFit.fitHeight,
+                      image: NetworkImage(
+                          'https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg'))
+
+
+                ),
+                child: Center(child: Text("Login " ,style: TextStyle(
+                  fontSize: 35,
+                  fontWeight:FontWeight.bold
+                ),)),
+              ),
             ),
 
           ],
