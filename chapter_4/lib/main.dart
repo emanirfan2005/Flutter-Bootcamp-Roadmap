@@ -12,12 +12,32 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.teal,
-          title: Center(child: Text("Container Widget")),
+          title: Center(child: Text("Expanded  Widget in Row ")),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            Row(
+              children: [
+                Expanded(
+                  flex: 2,
+                  child: Container(
+                    height: 250,
+                    color: Colors.red,
+                    child: Center(child: Text("Container 1")),
+                  ),
+                ),
+                Expanded(
+                  flex :3,
+                  child: Container(
+                    height: 250,
+                    color: Colors.green,
+                    child: Center(child: Text("Container 1")),
+                  ),
+                ),
+              ],
+            ),
             Container(
               width: 250,
               height: 250,
