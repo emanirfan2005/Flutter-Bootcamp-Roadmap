@@ -12,55 +12,62 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.teal,
-          title: Center(child: Text("Expanded  Widget in Row ")),
+          title: Center(child: Text("Stack Widget ")),
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Expanded(
-              flex: 1,
-              child: Container(
-                color: Colors.red,
-                child: Center(child: Text("Container 1")),
-              ),
-            ),
-            Expanded(
-              flex: 3,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.orange,
-
-                  borderRadius: BorderRadius.circular(10.0),
-
-
-                  boxShadow: [BoxShadow(
-                    color: Colors.grey,
-                    blurRadius: 50
-                  ),],
-
-                  // border: Border.all(
-                  //   color: Colors.red,
-                  //   width: 1,
-                  // ),
-
-
-
-                  image: DecorationImage(
-                    fit: BoxFit.fitHeight,
-                      image: NetworkImage(
-                          'https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg'))
-
-
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                child: Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    Container(
+                      height: 200,
+                      width: 200,
+                      color: Colors.black,
+                    ),
+                    Container(
+                      height: 180,
+                      width: 180,
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 160,
+                      width: 160,
+                      color: Colors.yellow,
+                    ),
+                    Text("Eman Irfan Ahmed")
+                  ],
                 ),
-                child: Center(child: Text("Login " ,style: TextStyle(
-                  fontSize: 35,
-                  fontWeight:FontWeight.bold
-                ),)),
               ),
-            ),
+              Stack(
+                children: [
+                  Container(
+                  height: 100,
+                  width: 100,
+                  color: Colors.red,
+                ),
+                  Positioned(
+                    right: 0,
+                    child: Container(
+                      height: 80,
+                      width: 80,
+                      color: Colors.green,
+                    ),
+                  ),
+                  Positioned(
+                    left: 20,
+                    child: Container(
+                      height: 60,
+                      width: 60,
+                      color: Colors.yellow,
+                    ),
+                  )],
+              ),
 
-          ],
+            ],
+          ),
         )
       ),
     );
